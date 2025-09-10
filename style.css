@@ -1,11 +1,11 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-primary: #141414;      /* Preto profundo */
+    --color-secondary: #3a3535;    /* Cinza escuro metálico */
+    --color-tertiary: #8a8a8a;     /* Cinza aço */
+    --color-button: #f01616;       /* Vermelho sangue */
+    --color-button-hover: #; /* Vermelho vivo */
+    --color-text: #e0e0e0;         /* Cinza claro */
+    --color-white: #ffffff;        /* Branco */
 }
 
 /* Estilos gerais */
@@ -21,6 +21,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png"); /* textura rock */
+    font-family: "Metal Mania", cursive, "Inter", sans-serif;
 }
 
 .main-content {
@@ -43,31 +45,33 @@ body {
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border: 2px solid #ff0000;
+    border-radius: 20px 20px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     width: 100%;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
 }
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-size: 52px;
+    font-family: "Metal Mania", cursive, "Merriweather", serif;
     font-weight: 900;
-    font-style: italic;
-    color: var(--color-white);
+    color: var(--color-button);
+    text-shadow: 2px 2px 8px #000;
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
+    font-family: "Metal Mania", cursive, "Inter", sans-serif;
+    font-size: 32px;
     font-weight: 700;
-    color: var(--color-primary);
-    margin: 10px 0;
+    color: var(--color-white);
+    margin: 15px 0;
     text-align: center;
+    text-shadow: 1px 1px 5px red;
 }
 
 /* Contêineres de entrada e botão */
@@ -81,10 +85,12 @@ body {
 
 .input-name {
     width: 100%;
-    padding: 10px;
-    border: 2px solid #000;
+    padding: 12px;
+    border: 2px solid #ff0000;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
+    background-color: #000;
+    color: var(--color-white);
 }
 
 .button-container {
@@ -92,37 +98,27 @@ body {
     justify-content: center;
 }
 
-/* Estilos de entrada de texto */
-.input-title {
-    flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilos de botão */
+/* Botões */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    border: 2px solid #000;
+    font-family: "Metal Mania", cursive, "Inter", sans-serif;
+    font-size: 18px;
+    border: 2px solid #ff0000;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+/* Botão adicionar */
 .button-add {
     background-color: var(--color-tertiary);
-    color: var(--color-text);
+    color: var(--color-white);
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #ff0000;
 }
 
 /* Listas */
@@ -130,33 +126,50 @@ ul {
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
+    color: #ffffff;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
+    text-shadow: 1px 1px 6px #000;
 }
 
-/* Botão de sortear título */
+/* Botão sortear */
 .button-draw {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 10px 40px;
+    padding: 12px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
-    font-size: 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 20px;
+    filter: invert(100%);
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+    box-shadow: 0 0 20px red;
+    transform: scale(1.05);
 }
+
+.header-banner img {
+    max-width: 80%;   /* largura máxima em relação ao container */
+    max-height: 200px; /* altura máxima */
+    height: auto;     /* mantém proporção */
+    width: auto;
+    object-fit: contain; /* garante que não distorça */
+}
+
+
