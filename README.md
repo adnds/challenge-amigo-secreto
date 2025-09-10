@@ -1,59 +1,52 @@
-🎁 Amigo Secreto
+# Amigo Secreto
 
-Uma aplicação simples e divertida para organizar sorteios de Amigo Secreto diretamente no navegador!
-Permite cadastrar amigos, visualizar a lista e realizar o sorteio de forma prática e rápida.
+Um aplicativo web simples para organizar e sortear **Amigo Secreto** de forma divertida e interativa.  
 
-🚀 Tecnologias utilizadas
+O principal objetivo deste projeto é **fortalecer habilidades em lógica de programação**, utilizando HTML, CSS e JavaScript.
 
-HTML5 → Estrutura da aplicação
+---
 
-CSS3 → Estilização com variáveis e responsividade
+## 📌 Funcionalidades
 
-JavaScript (ES6+) → Lógica de adicionar nomes e sortear o amigo secreto
+- ✍️ Adicionar nomes à lista de participantes.
+- ❌ Remover nomes, caso alguém desista (ou chegue atrasado 😂).
+- 🎲 Sortear aleatoriamente o amigo secreto.
+- ✨ Animação de sorteio com nomes passando rapidamente antes do resultado final — emoção garantida!
+- 🌙 Interface responsiva com tema escuro e efeitos visuais bem legais.
 
-Google Fonts (Inter & Merriweather) → Tipografia personalizada
+---
 
-⚙️ Funcionalidades
+## 💻 Tecnologias Utilizadas
 
-✔️ Adicionar nomes de amigos à lista
-✔️ Visualizar todos os nomes cadastrados
-✔️ Sortear automaticamente um amigo secreto
-✔️ Interface amigável e estilizada
+- **HTML5** – Estrutura do site.
+- **CSS3** – Estilização e efeitos visuais.
+- **JavaScript** – Lógica de adição, remoção e sorteio dos amigos.
 
-📸 Demonstração
-Tela inicial
-<img src="./assets/preview.png" alt="Tela inicial do Amigo Secreto" width="600px">
-Sorteio realizado
-<img src="./assets/amigo-secreto.png" alt="Sorteio do Amigo Secreto" width="600px">
-📂 Estrutura do projeto
-📦 amigo-secreto
-├── index.html        # Página principal
-├── style.css         # Estilos do projeto
-├── app.js            # Lógica do sorteio
-└── assets/           # Imagens e ícones
+---
 
-▶️ Como executar o projeto
+## 🛠 Como usar
 
-Clone este repositório:
+1. Clone o repositório:
 
+```bash
 git clone https://github.com/seu-usuario/amigo-secreto.git
 
+📂 Estrutura do Projeto
+amigo-secreto/
+│
+├── index.html       # Estrutura HTML do app
+├── style.css        # Estilos e design do app
+├── app.js           # Lógica de funcionamento do app
+└── assets/          # Imagens e ícones utilizados
 
-Acesse a pasta do projeto:
+⚡ Observações
 
-cd amigo-secreto
+É necessário ter pelo menos 2 participantes para realizar o sorteio.
+O sorteio é aleatório, então cada vez que clicar em Sortear amigo, o resultado pode mudar.
+O projeto é totalmente front-end, não requer servidor para funcionar.
+
+✨ Autor
+Adilson – Desenvolvedor Front-end
 
 
-Abra o arquivo index.html no seu navegador.
 
-💡 Melhorias futuras
-
-🔒 Garantir que uma pessoa não tire a si mesma no sorteio
-
-📱 Melhorar a responsividade para celulares
-
-🎨 Implementar temas customizados (claro/escuro)
-
-📧 Possibilidade de enviar o resultado por e-mail
-
-👨‍💻 Autor: Adilson 
