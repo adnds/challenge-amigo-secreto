@@ -30,6 +30,7 @@ O principal objetivo deste projeto é **fortalecer habilidades em lógica de pro
 git clone https://github.com/seu-usuario/amigo-secreto.git
 
 📂 Estrutura do Projeto
+
 amigo-secreto/
 │
 ├── index.html       # Estrutura HTML do app
