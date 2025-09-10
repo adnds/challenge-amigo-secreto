@@ -27,8 +27,6 @@ O principal objetivo deste projeto é **fortalecer habilidades em lógica de pro
 ## 🛠 Como usar
 
 1. Clone o repositório:
-
-```bash
 git clone https://github.com/seu-usuario/amigo-secreto.git
 
 📂 Estrutura do Projeto
